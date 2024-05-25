@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Single Price Grid Component</title>
+
+    <style>
+      body {
+        font-family: "Karla", sans-serif;
+        font-size: 1rem;
+      }
+
+      .grid-rows-auto {
+        grid-template-rows: auto auto auto;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#E5EFF5] flex my-10 justify-center items-center md:my-0 md:h-screen"
+  >
+    <main
+      class="w-[90%] bg-[#fff] rounded overflow-hidden md:grid md:grid-cols-2 md:w-5/12 shadow-xl"
+    >
+      <section class="bg-[#fff] p-7 col-span-2 md:px-10">
+        <h1 class="text-[#2BB3B1] text-xl font-bold">Join our community</h1>
+
+        <p class="my-4 text-[#C0DF34] font-bold">
+          30-day, hassle-free money back guarantee
+        </p>
+
+        <p
+          class="text-[#98A6BD] font-medium leading-loose text-sm md:text-base"
+        >
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </section>
+
+      <section class="bg-[#2BB3B1] p-7">
+        <h2 class="text-[#fff] text-lg font-bold mb-3">Monthly Subscription</h2>
+
+        <p class="text-3xl text-[#fff] flex items-center gap-2 font-bold">
+          &dollar;29
+          <span class="text-base text-[#a7dae2] font-normal">per month</span>
+        </p>
+
+        <p class="text-[#E5EFF5] mt-1 mb-7">
+          Full access for less than &dollar;1 a day
+        </p>
+
+        <button
+          type="submit"
+          class="w-full bg-[#C0DF34] py-3 text-[#fff] font-semibold rounded shadow-lg"
+        >
+          Sign Up
+        </button>
+      </section>
+
+      <section class="bg-[#4ABEBD] p-7">
+        <h2 class="text-[#fff] font-bold text-lg mb-5">Why Us</h2>
+        <p class="text-[#bde8ef] text-sm">
+          Tutorials by industry experts <br />
+          Peer &amp; expert code review <br />
+          Coding exercises <br />
+          Access to our GitHub repos <br />
+          Community forum <br />
+          Flashcard decks <br />
+          New videos every week
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
